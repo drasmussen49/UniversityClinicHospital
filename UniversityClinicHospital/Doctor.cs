@@ -7,9 +7,10 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
         public string Specialty { get; set; }
-        public Doctor() : base("Dr. House", 1000, 90000)
+        public Doctor(string name, int ID, string specialty) : base(name, ID)
         {
-            Specialty = "Heart Specialist";
+            Specialty = specialty;
+            Salary = 95000;
         }
         public void DrawBlood()
         {

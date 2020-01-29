@@ -6,17 +6,21 @@ namespace UniversityClinicHospital
 {
     public class Employee
     {
+        
         public string Name { get; set; }
         public int EmployeeID { get; set; }
         public int Salary { get; set; }
         public bool HasBeenPaid { get; set; }
 
-        public Employee(string name, int employeeID, int salary, bool hasBeenPaid = false)
+        public Employee()
+        {
+
+        }
+        public Employee(string name, int employeeID)
         {
             Name = name;
             EmployeeID = employeeID;
-            Salary = salary;
-            HasBeenPaid = hasBeenPaid;
+            HasBeenPaid = false;
         }
         public void PaySalary()
         {
