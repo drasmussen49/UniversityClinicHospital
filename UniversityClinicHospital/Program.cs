@@ -6,9 +6,11 @@ namespace UniversityClinicHospital
     {
         static void Main(string[] args)
         {
-            Doctor myDoc = new Doctor();
-            myDoc.EmployeeID = 1555;
-            Console.WriteLine(myDoc.EmployeeID);
+            
+            
+            
+            Console.WriteLine("Welcome to University Clinic Hospital Software!");
+            Console.WriteLine();
         }
     }
 }

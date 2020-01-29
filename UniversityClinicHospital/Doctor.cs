@@ -7,5 +7,13 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
         public string Specialty { get; set; }
+        public void DrawBlood()
+        {
+           
+        }
+        public void CareForPatient()
+        {
+
+        }
     }
 }

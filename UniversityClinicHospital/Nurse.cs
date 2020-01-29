@@ -7,5 +7,13 @@ namespace UniversityClinicHospital
     class Nurse : Employee
     {
         public int NumberOfPatients { get; set; }
+        public void DrawBlood()
+        {
+
+        }
+        public void CareForPatient()
+        {
+
+        }
     }
 }
