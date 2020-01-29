@@ -6,7 +6,9 @@ namespace UniversityClinicHospital
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Doctor myDoc = new Doctor();
+            myDoc.EmployeeID = 1555;
+            Console.WriteLine(myDoc.EmployeeID);
         }
     }
 }
