@@ -6,6 +6,10 @@ namespace UniversityClinicHospital
 {
     class Receptionist : Employee
     {
-        public bool OnPHone { get; set; }
+        public bool OnPhone { get; set; }
+        public Receptionist() : base("Mr. Blue", 1002, 45000)
+        {
+            OnPhone = false;
+        }
     }
 }
