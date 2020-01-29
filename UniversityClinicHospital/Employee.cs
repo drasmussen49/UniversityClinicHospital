@@ -8,5 +8,7 @@ namespace UniversityClinicHospital
     {
         public string Name { get; set; }
         public int EmployeeID { get; set; }
+        public int Salary { get; set; }
+        public bool HasBeenPayed { get; set; }
     }
 }

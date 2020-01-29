@@ -4,8 +4,8 @@ using System.Text;
 
 namespace UniversityClinicHospital
 {
-    public class Doctor : Employee
+    class Janitor : Employee
     {
-        public string Specialty { get; set; }
+        public bool IsSweeping { get; set; }
     }
 }
