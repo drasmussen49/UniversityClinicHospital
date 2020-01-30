@@ -7,9 +7,10 @@ namespace UniversityClinicHospital
     class Receptionist : Employee
     {
         public bool OnPhone { get; set; }
-        public Receptionist() : base("Mr. Blue", 1002, 45000)
+        public Receptionist(string name, int ID) : base(name, ID)
         {
             OnPhone = false;
+            Salary = 45000;
         }
     }
 }

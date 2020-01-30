@@ -14,7 +14,9 @@ namespace UniversityClinicHospital
             //Janitor janitor = new Janitor();
             Patient patient = new Patient("Bob");
             employeeList.Add(new Doctor("Dr. House", 1000, "Heart Specialty"));
-            employeeList.Add(new Nurse());
+            employeeList.Add(new Nurse("Ms. Green", 1001, 10));
+            employeeList.Add(new Receptionist("Mr. Blue", 1002));
+            employeeList.Add(new Janitor("Mr. Clean", 1003));
 
 
 
