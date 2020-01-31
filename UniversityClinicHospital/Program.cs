@@ -19,11 +19,8 @@ namespace UniversityClinicHospital
             employeeList.Add(new Janitor("Mr. Clean", 1003));
 
 
-
-
-
-
             Console.WriteLine("Welcome to University Clinic Hospital Software!");
+            Console.WriteLine("Select a number from the list below to interact with the software.");
             Console.WriteLine("1. ");
         }
     }
