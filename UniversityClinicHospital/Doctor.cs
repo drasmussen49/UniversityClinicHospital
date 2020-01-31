@@ -7,6 +7,10 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
         public string Specialty { get; set; }
+        public Doctor()
+        {
+
+        }
         public Doctor(string name, int ID, string specialty) : base(name, ID)
         {
             Specialty = specialty;
@@ -33,6 +37,7 @@ namespace UniversityClinicHospital
             {
                 myPatient.HealthStatus = 100;
                 Console.WriteLine("The patient is perfectly healthy!");
+
             }
         }
     }

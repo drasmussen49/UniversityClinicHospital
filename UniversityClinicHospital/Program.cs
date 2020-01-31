@@ -21,7 +21,16 @@ namespace UniversityClinicHospital
 
             Console.WriteLine("Welcome to University Clinic Hospital Software!");
             Console.WriteLine("Select a number from the list below to interact with the software.");
-            Console.WriteLine("1. ");
+            Console.WriteLine("1. Print list of employees and their attributes.");
+            Console.WriteLine("2. Pay the employees.");
+            Console.WriteLine("3. Perform medical procedures.");
+            Console.WriteLine("4. Exit the program.");
+            string userInput = Console.ReadLine();
+
+            //switch (userInput)
+            //{
+
+            //}
         }
     }
 }

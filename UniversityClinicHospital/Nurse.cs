@@ -4,9 +4,13 @@ using System.Text;
 
 namespace UniversityClinicHospital
 {
-    class Nurse : Employee
+    public class Nurse : Employee
     {
         public int NumberOfPatients { get; set; }
+        public Nurse()
+        {
+
+        }
         public Nurse(string name, int ID, int numOfPatients) : base(name, ID)
         {
             numOfPatients = NumberOfPatients;

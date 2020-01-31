@@ -9,6 +9,11 @@ namespace UniversityClinicHospital
         public string Name { get; set; }
         public int BloodLevel { get; set; }
         public int HealthStatus { get; set; }
+        public Patient()
+        {
+
+        }
+        
         public Patient(string name)
         {
             Name = name;
