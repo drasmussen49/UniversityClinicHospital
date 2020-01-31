@@ -21,7 +21,7 @@ namespace UniversityClinicHospital
 
             do
             {
-                Console.WriteLine("Welcome to University Clinic Hospital Software!");
+                Console.WriteLine("\nWelcome to University Clinic Hospital Software!");
                 Console.WriteLine("Select a number from the list below to interact with the software.");
                 Console.WriteLine("1. Print list of employees and their attributes.");
                 Console.WriteLine("2. Pay the employees.");
@@ -39,19 +39,35 @@ namespace UniversityClinicHospital
                             }
                             break;
                         }
+                    case "2":
+                        {
+                            if (employeeList[0].HasBeenPaid == false)
+                            {
+                                foreach (Employee myEmp in employeeList)
+                                {
+                                    myEmp.PaySalary();
+                                }
+                                Console.WriteLine("\nAll employees have been paid!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("\nAll employees have already been paid!");
+                            }
+                            break;
+                        }
                     case "4":
                         {
-                            Console.WriteLine("You will now exit the program.");
-                            usingSoftware = true;
-                            break;
-                        }
-                    default:
-                        {
-                            break;
-                        }
+                    Console.WriteLine("You will now exit the program.");
+                    usingSoftware = true;
+                    break;
                 }
+                default:
+                        {
+                    break;
+                }
+            }
             } while (usingSoftware == false);
-            
+
         }
-    }
+}
 }
