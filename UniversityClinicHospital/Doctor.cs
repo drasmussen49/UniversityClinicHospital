@@ -12,13 +12,28 @@ namespace UniversityClinicHospital
             Specialty = specialty;
             Salary = 95000;
         }
-        public void DrawBlood()
+        public override void DrawBlood(Patient myPatient)
         {
-           
+            if (myPatient.BloodLevel > 2)
+            {
+                myPatient.BloodLevel -= 2;
+            }
+            else
+            {
+                Console.WriteLine("The patient doesn't have enough blood to draw!");
+            }
         }
-        public void CareForPatient()
+        public override void CareForPatient(Patient myPatient)
         {
-
+            if (myPatient.HealthStatus < 85)
+            {
+                myPatient.HealthStatus += 15;
+            }
+            else
+            {
+                myPatient.HealthStatus = 100;
+                Console.WriteLine("The patient is perfectly healthy!");
+            }
         }
     }
 }
