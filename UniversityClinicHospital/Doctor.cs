@@ -16,6 +16,10 @@ namespace UniversityClinicHospital
             Specialty = specialty;
             Salary = 95000;
         }
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Position: {Specialty} Doctor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid?: {HasBeenPaid}");
+        }
         public override void DrawBlood(Patient myPatient)
         {
             if (myPatient.BloodLevel > 2)

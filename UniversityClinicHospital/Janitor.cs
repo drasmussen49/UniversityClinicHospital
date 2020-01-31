@@ -12,5 +12,9 @@ namespace UniversityClinicHospital
             IsSweeping = false;
             Salary = 40000;
         }
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Position: Janitor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Is Sweeping?:{IsSweeping}  Been Paid?: {HasBeenPaid}");
+        }
     }
 }

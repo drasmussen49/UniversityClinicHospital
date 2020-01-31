@@ -12,5 +12,9 @@ namespace UniversityClinicHospital
             OnPhone = false;
             Salary = 45000;
         }
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Position: Receptionist  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  On Phone?: {OnPhone}  Been Paid?: {HasBeenPaid}");
+        }
     }
 }

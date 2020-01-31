@@ -16,6 +16,10 @@ namespace UniversityClinicHospital
             numOfPatients = NumberOfPatients;
             Salary = 50000;
         }
+        public override void PrintInfo()
+        {
+            Console.WriteLine($"Position: Nurse  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid? {HasBeenPaid}");
+        }
         public override void DrawBlood(Patient myPatient)
         {
             if (myPatient.BloodLevel > 1)

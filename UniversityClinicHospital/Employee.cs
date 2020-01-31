@@ -26,6 +26,10 @@ namespace UniversityClinicHospital
         {
             HasBeenPaid = true;
         }
+        public virtual void PrintInfo()
+        {
+
+        }
         public virtual void DrawBlood(Patient myPatient)
         {
 
