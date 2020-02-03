@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace UniversityClinicHospital
 {
@@ -18,7 +19,16 @@ namespace UniversityClinicHospital
         }
         public override void PrintInfo()
         {
-            Console.WriteLine($"Position: Nurse  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid? {HasBeenPaid}");
+            //Console.WriteLine($"Position: Nurse  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid? {HasBeenPaid}");
+
+            //Console.WriteLine("___________________________________________________________________________________________________________________________________");
+            //Console.WriteLine("|   Position   |               | Employee  Name |                | EmployeeID |               | Salary |               | Been Paid |");
+            //Console.WriteLine("___________________________________________________________________________________________________________________________________");
+            wait(1);
+            Console.WriteLine("    " + " Nurse" + "                         " + Name + "                           " + EmployeeID + "                        " + Salary + "                      " + HasBeenPaid);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------");
+
+
         }
         public override void DrawBlood(Patient myPatient)
         {
@@ -43,5 +53,7 @@ namespace UniversityClinicHospital
                 Console.WriteLine("The patient is perfectly healthy!");
             }
         }
+
+
     }
 }

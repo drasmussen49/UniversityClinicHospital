@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace UniversityClinicHospital
 {
     public class Employee
     {
-        
+
         public string Name { get; set; }
         public int EmployeeID { get; set; }
         public int Salary { get; set; }
@@ -36,6 +37,11 @@ namespace UniversityClinicHospital
         }
         public virtual void CareForPatient(Patient myPatient)
         {
+
+        }
+        public static void wait(int seconds)
+        {
+            Thread.Sleep(seconds * 1000);
 
         }
     }

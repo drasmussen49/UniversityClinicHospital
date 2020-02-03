@@ -14,7 +14,11 @@ namespace UniversityClinicHospital
         }
         public override void PrintInfo()
         {
-            Console.WriteLine($"Position: Receptionist  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  On Phone?: {OnPhone}  Been Paid?: {HasBeenPaid}");
+            wait(1);
+            //  Console.WriteLine($"Position: Receptionist  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  On Phone?: {OnPhone}  Been Paid?: {HasBeenPaid}");
+            Console.WriteLine("  " + " Receptionist" + "                     " + Name + "                           " + EmployeeID + "                        " + Salary + "                      " + HasBeenPaid);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------");
+
         }
     }
 }

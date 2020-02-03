@@ -14,7 +14,11 @@ namespace UniversityClinicHospital
         }
         public override void PrintInfo()
         {
-            Console.WriteLine($"Position: Janitor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Is Sweeping?:{IsSweeping}  Been Paid?: {HasBeenPaid}");
+            wait(1);
+            // Console.WriteLine($"Position: Janitor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Is Sweeping?:{IsSweeping}  Been Paid?: {HasBeenPaid}");
+            Console.WriteLine("    " + "Janitor" + "                        " + Name + "                           " + EmployeeID + "                        " + Salary + "                      " + HasBeenPaid);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("\t");
         }
     }
 }

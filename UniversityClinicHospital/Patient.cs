@@ -13,7 +13,7 @@ namespace UniversityClinicHospital
         {
 
         }
-        
+
         public Patient(string name)
         {
             Name = name;

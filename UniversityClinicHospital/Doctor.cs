@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace UniversityClinicHospital
@@ -18,7 +19,25 @@ namespace UniversityClinicHospital
         }
         public override void PrintInfo()
         {
-            Console.WriteLine($"Position: {Specialty} Doctor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid?: {HasBeenPaid}");
+            int s = 9988888;
+            // Console.WriteLine($"Position: {Specialty} Doctor  Name: {Name}  EmployeeID: {EmployeeID}  Salary:${Salary}  Been Paid?: {HasBeenPaid}");
+
+            Console.WriteLine("\t\t");
+            Console.WriteLine("___________________________________________________________________________________________________________________________________");
+            Console.WriteLine("|   Position   |               | Employee Name |                | EmployeeID |               | Salary |               | Been Paid |");
+            Console.WriteLine("___________________________________________________________________________________________________________________________________");
+
+            Console.WriteLine("    " + Specialty + "                          " + Name + "                            " + EmployeeID + "                        " + Salary + "                      " + HasBeenPaid);
+            Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------------");
+
+        }
+
+        public static void createdatafile(string path, string[] lines)
+        {
+            StreamWriter sw = new StreamWriter(path);
+            foreach (string line in lines)
+                sw.WriteLine(line);
+            sw.Close();
         }
         public override void DrawBlood(Patient myPatient)
         {
